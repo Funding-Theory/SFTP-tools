@@ -23,10 +23,34 @@ These tools are used to make searching and extracting data easier
 
 > Usage
 ```
-  python search_tool.py --metadata <Location of metadata file> --search <Location of search file>
+  python tools/search_tool.py --metadata <Location of metadata file> --search <Location of search file>
 ```
 
 > Help
 ```
-  python search_tool.py --help
+  python tools/search_tool.py --help
 ```
+
+### Split sequence Tool
+> Requirements
+
+- `Selected file` must be in `tsv` format
+- `Selected file` must contain the header `ids` as shown below
+
+
+| ids |
+| - |
+| header 1 | 
+| header 2 | 
+| header 3 | 
+| ... |
+| header n |
+
+> Usage
+```
+  python tools/split_sequences_tool.py --fasta <Location of fasta file> --selected <Location of selected header file>
+```
+
+> Help
+```
+  python tools/split_sequences_tool.py --help
