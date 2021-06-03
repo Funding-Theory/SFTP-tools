@@ -9,7 +9,6 @@ parser.add_argument('--metadata', help='Enter NIBMG Datahub metadata')
 args = parser.parse_args()
 search_url = args.search
 metadata_url = args.metadata
-temp = search_url.split('/')
 
 search = pandas.read_csv(search_url, delimiter = '\t', encoding = 'utf-8', low_memory = False)
 metadata = pandas.read_csv(metadata_url, delimiter = '\t', encoding = 'utf-8', low_memory = False)
