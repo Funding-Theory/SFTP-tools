@@ -26,4 +26,4 @@ if(len(ids_not_present)):
 	for i in ids_not_present:
 		print(i)
 
-SeqIO.write(adjusted_sequence, f'{initial_dir}/selected_sequences.fasta', 'fasta')
+SeqIO.write(adjusted_sequence, 'selected_sequences.fasta', 'fasta')
