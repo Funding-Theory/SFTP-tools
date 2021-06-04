@@ -48,9 +48,9 @@ These tools are used to make searching and extracting data easier
 
 > Usage
 ```
-  python tools/split_sequences_tool.py --fasta <Location of fasta file> --selected <Location of selected header file>
+  python tools/split_sequence_tool.py --fasta <Location of fasta file> --selected <Location of selected header file>
 ```
 
 > Help
 ```
-  python tools/split_sequences_tool.py --help
+  python tools/split_sequence_tool.py --help
