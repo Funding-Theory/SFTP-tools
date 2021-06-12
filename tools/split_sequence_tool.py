@@ -11,8 +11,6 @@ sequence_url = args.fasta
 metadata_url = args.selected
 
 selected = pandas.read_csv(metadata_url, delimiter = '\t', encoding = 'utf-8')
-selected_sequence = []
-
-test = [selected_sequence.append(i) for i in tqdm(SeqIO.parse(sequence_url, 'fasta')) if(i.id in selected['ids'])]
+selected_sequence = [i for i in tqdm(SeqIO.parse(sequence_url, 'fasta')) if(i.id in selected['ids'].to_list())]
 
 SeqIO.write(selected_sequence, 'selected_sequences.fasta', 'fasta')
