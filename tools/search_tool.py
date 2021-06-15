@@ -11,7 +11,7 @@ search_url = args.search
 metadata_url = args.metadata
 
 search = pandas.read_csv(search_url, delimiter = '\t', encoding = 'utf-8', low_memory = False)
-metadata = pandas.read_csv(metadata_url, delimiter = '\t', encoding = 'utf-8', low_memory = False)
+metadata = pandas.read_csv(metadata_url, delimiter = ',', encoding = 'utf-8', low_memory = False)
 matched = []
 unmatched = []
 multimatch = []
